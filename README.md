@@ -62,10 +62,10 @@ Open your browser and go to [http://localhost:5173](http://localhost:5173)
 *Replace below image links with real paths after uploading them to GitHub or a CDN.*
 
 ### 📌 Dashboard
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](images/dashboard.png)
 
 ### 👤 Reader Management
-![Reader Management](./screenshots/reader-management.png)
+![Reader Management](images/reader.png)
 
 ### 📚 Book Catalog
 ![Book Catalog](images/book.png)
