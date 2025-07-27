@@ -1,240 +1,120 @@
-# 📚 Book Club Library Management – Frontend
+# 📚 Book Club Library Management
 
-A full-stack web application frontend built for a library based in Colombo, Sri Lanka. This system helps manage books, readers, lending transactions, and overdue tracking. This is the **frontend** part of the system developed using **React**, **TypeScript**, and **Tailwind CSS**.
+A modern library management system frontend built for libraries in Sri Lanka. Manage books, readers, lending, and overdue tracking with ease.
 
 ## ✨ Features
 
-* 🔐 **Authentication** – Login system for authorized staff
-* 👤 **Reader Management** – Add, edit, view, and delete readers
-* 📚 **Book Management** – Add, edit, view, and delete books
-* 📖 **Lending System** – Lend and return books, track lending history
-* ⏰ **Overdue Management** – Display overdue books and readers
-* ✉️ **Email Notifications** – Notify readers about overdue books
-* 🔍 **Search & Filters** – Easy search for readers and books
-* 🧾 **Audit Logging** – Track lending, return, and deletion actions
-* 📱 **Responsive UI** – Works across desktops, tablets, and phones
+- 🔐 **Authentication** - Secure staff login
+- 👤 **Reader Management** - Complete CRUD operations
+- 📚 **Book Management** - Catalog management
+- 📖 **Lending System** - Track lending & returns
+- ⏰ **Overdue Tracking** - Monitor overdue books
+- ✉️ **Email Notifications** - Automated reminders
+- 🔍 **Search & Filter** - Quick data access
+- 📱 **Responsive Design** - Works on all devices
 
-## 🖥️ Tech Stack
+## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|------------|
-| Frontend | React, TypeScript |
-| Styling | Tailwind CSS |
-| Auth | JWT |
-| Backend | Node.js, TypeScript, MongoDB |
-| Email | SendGrid or Nodemailer |
+- **Frontend:** React, TypeScript, Tailwind CSS
+- **Authentication:** JWT
+- **Backend:** Node.js, MongoDB
+- **Email:** SendGrid/Nodemailer
 
-## 🚀 Setup Instructions
-
-### 1. **Clone the repository**
+## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/your-username/bookclub-frontend.git
+# Clone repository
+git clone https://github.com/lakmal-yapa-22/book-club-library-management-fontend.git
 cd bookclub-frontend
-```
 
-### 2. **Install dependencies**
-
-```bash
+# Install dependencies
 npm install
-```
 
-### 3. **Create `.env` file**
+# Create environment file
+echo "VITE_API_BASE_URL=http://localhost:3000/api" > .env
 
-Create a `.env` file in the root directory and add:
-
-```bash
-VITE_API_BASE_URL=http://localhost:3000/api
-```
-
-### 4. **Run the development server**
-
-```bash
+# Start development server
 npm run dev
 ```
 
-### 5. **Access the app**
+Visit [http://localhost:5173](http://localhost:5173) to access the application.
 
-Open your browser and go to [http://localhost:5173](http://localhost:5173)
-
-## 🖼️ Screenshots
-
-*Replace below image links with real paths after uploading them to GitHub or a CDN.*
-
-### 📌 signup
-![Signup](images/signup.png)
-
-### 📌 Login
-![Login](images/login.png)
-
-### 📌 Dashboard
-![Dashboard](images/dashboard.png)
-
-### 👤 Reader Management
-![Reader Management](images/reader.png)
-
-### 📚 Book Catalog
-![Book Catalog](images/book.png)
-
-### IssueBook
-![Issue Book](images/issuebook.png) (images/viewIssureBook.png)
-
-## 📂 Project Structure (Frontend)
+## 📂 Project Structure
 
 ```
-bookclub-frontend/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── ui/
-│   │   ├── forms/
-│   │   ├── tables/
-│   │   └── layout/
-│   ├── pages/
-│   │   ├── auth/
-│   │   ├── dashboard/
-│   │   ├── readers/
-│   │   ├── books/
-│   │   └── lending/
-│   ├── services/
-│   │   ├── api.ts
-│   │   ├── auth.ts
-│   │   └── endpoints.ts
-│   ├── context/
-│   │   ├── AuthContext.tsx
-│   │   └── AppContext.tsx
-│   ├── hooks/
-│   │   ├── useAuth.ts
-│   │   └── useApi.ts
-│   ├── routes/
-│   │   └── AppRoutes.tsx
-│   ├── types/
-│   │   └── index.ts
-│   ├── utils/
-│   │   └── helpers.ts
-│   ├── App.tsx
-│   └── main.tsx
-├── tailwind.config.js
-├── tsconfig.json
-├── vite.config.ts
-└── package.json
+src/
+├── components/     # Reusable UI components
+├── pages/         # Application pages
+├── services/      # API integration
+├── context/       # State management
+├── hooks/         # Custom React hooks
+├── types/         # TypeScript definitions
+└── utils/         # Helper functions
 ```
 
-## 🛠️ Available Scripts
+## 📸 Screenshots
+
+| Feature | Preview |
+|---------|---------|
+| Login | ![Login](images/login.png) |
+| Dashboard | ![Dashboard](images/dashboard.png) |
+| Reader Management | ![Readers](images/reader.png) |
+| Book Catalog | ![Books](images/book.png) |
+| Issue Books | ![Issue](images/issuebook.png) |
+
+## 🔧 Available Scripts
 
 ```bash
-# Development
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run preview      # Preview production build
-npm run lint         # Run ESLint
-npm run type-check   # TypeScript type checking
+npm run dev      # Development server
+npm run build    # Production build
+npm run preview  # Preview build
+npm run lint     # Code linting
 ```
 
-## 🔧 Environment Variables
+## 📋 Development Status
 
-Create a `.env` file in the root directory:
-
-```env
-# API Configuration
-VITE_API_BASE_URL=http://localhost:3000/api
-
-# Optional: For production
-VITE_APP_TITLE=Book Club Library Management
-VITE_APP_VERSION=1.0.0
-```
-
-## 📋 Prerequisites
-
-- **Node.js** (v16 or higher)
-- **npm** or **yarn**
-- **Git**
-
-## ✅ Development Status
-
-- [x] Basic UI Components
-- [x] API Integration
-- [x] JWT Authentication
-- [x] Reader & Book CRUD Operations
-- [x] Lending Logic Implementation
-- [x] Overdue Notification System
-- [ ] Final UI Polish
-- [ ] Deployment Setup
-- [ ] Unit Tests
-- [ ] E2E Tests
+- ✅ Core functionality complete
+- ✅ Authentication system
+- ✅ CRUD operations
+- ✅ Responsive design
+- 🔄 Testing & optimization
+- 📅 Deployment preparation
 
 ## 🚀 Deployment
 
-### Vercel Deployment
-
+**Vercel:**
 ```bash
-# Install Vercel CLI
 npm i -g vercel
-
-# Deploy
 vercel --prod
 ```
 
-### Netlify Deployment
-
+**Netlify:**
 ```bash
-# Build the project
 npm run build
-
-# Deploy dist folder to Netlify
+# Upload dist/ folder to Netlify
 ```
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+2. Create feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open Pull Request
 
-## 🐛 Known Issues
-
-- [ ] Mobile responsiveness needs improvement on some components
-- [ ] Search functionality could be optimized for better performance
-- [ ] Email notifications require backend configuration
-
-## 📚 Documentation
-
-- [API Documentation](./docs/API.md)
-- [Component Documentation](./docs/COMPONENTS.md)
-- [Deployment Guide](./docs/DEPLOYMENT.md)
-
-## 🔗 Related Repositories
-
-- [Backend Repository](https://github.com/your-username/bookclub-backend)
-- [Mobile App](https://github.com/your-username/bookclub-mobile)
-
-## 🙋‍♂️ Author
+## 👨‍💻 Author
 
 **Lakmal Kumarasiri Yapa**  
-📍 Monaragala, Sri Lanka  
-🧑‍💻 Software Engineering Undergraduate @ IJSE  
-🔗 [LinkedIn](https://linkedin.com/in/your-profile) | [GitHub](https://github.com/your-username)
+Software Engineering Student @ IJSE  
+📍 Monaragala, Sri Lanka
 
-## 📞 Support
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/lakmal-yapa-22)
 
-If you have any questions or need help with setup, please:
-
-1. Check the [Issues](https://github.com/your-username/bookclub-frontend/issues) page
-2. Create a new issue if your problem isn't already listed
-3. Contact me via LinkedIn for urgent matters
-
-## 📝 License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- IJSE for providing the learning platform
-- React community for excellent documentation
-- Tailwind CSS for the amazing utility-first framework
-- All contributors and testers
-
 ---
 
-**Made with ❤️ in Sri Lanka**
+⭐ **Star this repo if you found it helpful!**
