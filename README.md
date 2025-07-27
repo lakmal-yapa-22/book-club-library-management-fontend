@@ -61,6 +61,12 @@ Open your browser and go to [http://localhost:5173](http://localhost:5173)
 
 *Replace below image links with real paths after uploading them to GitHub or a CDN.*
 
+### 📌 signup
+![Signup](images/signup.png)
+
+### 📌 Login
+![Login](images/login.png)
+
 ### 📌 Dashboard
 ![Dashboard](images/dashboard.png)
 
